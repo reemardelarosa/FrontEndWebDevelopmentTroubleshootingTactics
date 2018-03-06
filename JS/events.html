@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>The Convention - Events</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+		<link rel="stylesheet" href="css/custom.css"/>
+		<script type="text/javascript">			
+			window.onload = loadEvents();
+		</script>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-static-top navbar-dark bg-inverse">
+		  <ul class="nav navbar-nav">
+			<li class="nav-item active">
+			  <a class="nav-link" href="home.html">Home</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="events.html">Events <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="schedule.html">Schedule</a>
+			</li>
+		  </ul>
+		</nav>				
+
+		<div class="container">
+			<div class="header">
+				<h1>Events</h1>
+				<hr />
+				<p>
+					This page lists the individual events that you can register for during The Convention. If you want to register for multiple events, you can do that on the Schedule page.
+				</p>
+			</div>
+		  
+			<div class="panel-group">
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a id="event1Title" data-toggle="collapse" href="#collapse1"></a>
+				  </h4>
+				</div>
+				<div id="collapse1" class="panel-collapse collapse">
+				  <div class="panel-body">
+					<div class="row">
+						<div class="col-md-12">
+						  <p id="event1Description"></p>
+						  <p id="event1Schedule"></p>					  
+						</div>					
+					  </div>
+				  </div>
+				  <div class="panel-footer">
+					<a class="btn btn-primary btn-lg" href="#" role="button" onclick="singleEventRegister(1)">Register &raquo;</a>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="panel-group">
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a id="event2Title" data-toggle="collapse" href="#collapse2"></a>
+				  </h4>
+				</div>
+				<div id="collapse2" class="panel-collapse collapse">
+				  <div class="panel-body">
+					<div class="row">
+						<div class="col-md-12">
+						  <p id="event2Description"></p>
+						  <p id="event2Schedule"></p>
+						</div>					
+					  </div>
+				  </div>
+				  <div class="panel-footer">
+					<a class="btn btn-primary btn-lg" href="#" role="button" onclick="singleEventRegister(2)">Register &raquo;</a>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="panel-group">
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a id="event3Title" data-toggle="collapse" href="#collapse3"></a>
+				  </h4>
+				</div>
+				<div id="collapse3" class="panel-collapse collapse">
+				  <div class="panel-body">
+					<div class="row">
+						<div class="col-md-12">
+						  <p id="event3Description"></p>
+						  <p id="event3Schedule"></p>
+						</div>					
+					  </div>
+				  </div>
+				  <div class="panel-footer">
+					<a class="btn btn-primary btn-lg" href="#" role="button" onclick="singleEventRegister(3)">Register &raquo;</a>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="panel-group">
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a id="event4Title" data-toggle="collapse" href="#collapse4"></a>
+				  </h4>
+				</div>
+				<div id="collapse4" class="panel-collapse collapse">
+				  <div class="panel-body">
+					<div class="row">
+						<div class="col-md-12">
+						  <p id="event4Description"></p>
+						  <p id="event4Schedule"></p>
+						</div>					
+					  </div>
+				  </div>
+				  <div class="panel-footer">
+					<a class="btn btn-primary btn-lg" href="#" role="button" onclick="singleEventRegister(4)">Register &raquo;</a>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="panel-group">
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a id="event5Title" data-toggle="collapse" href="#collapse5"></a>
+				  </h4>
+				</div>
+				<div id="collapse5" class="panel-collapse collapse">
+				  <div class="panel-body">
+					<div class="row">
+						<div class="col-md-12">
+						  <p id="event5Description"></p>
+						  <p id="event5Schedule"></p>
+						</div>					
+					  </div>
+				  </div>
+				  <div class="panel-footer">
+					<a class="btn btn-primary btn-lg" href="#" role="button" onclick="singleEventRegister(5)">Register &raquo;</a>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="panel-group">
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a id="event6Title" data-toggle="collapse" href="#collapse6"></a>
+				  </h4>
+				</div>
+				<div id="collapse6" class="panel-collapse collapse">
+				  <div class="panel-body">
+					<div class="row">
+						<div class="col-md-12">
+						  <p id="event6Description"></p>
+						  <p id="event6Schedule"></p>
+						</div>					
+					  </div>
+				  </div>
+				  <div class="panel-footer">
+					<a class="btn btn-primary btn-lg" href="#" role="button" onclick="singleEventRegister(6)">Register &raquo;</a>
+				  </div>
+				</div>
+			  </div>
+			</div>
+
+			<hr />
+		  
+		</div> <!-- /container -->
+
+		<!-- Modal -->
+		<div id="registrationModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Event Registration</h4>
+			  </div>
+			  <div class="modal-body">
+				<span id="modalEventId" style="display:none;"></span>
+				<p id="modalEventTitle"></p>
+				<p id="modalEventSchedule"></p>
+				<div>
+					<span>First Name</span>&nbsp;<input type="text" id="firstName"/>
+					<span>Last Name</span>&nbsp;<input type="text" id="lastName"/>
+				</div>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-default" onclick="confirmRegistration()">Register</button>
+			  </div>
+			</div>
+
+		  </div>
+		</div>
+		
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://ajax.googleapis.com/ajax/lib/jquery/2.1.4/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		
+		<script type="text/javascript">
+			var events = [
+				{id:"1", 
+				title:"Batdude vs. Flyguy Q&A Panel", 
+				description:"Your favorite superheroes, Batdude and Flyguy team up for this once in a lifetime Q&A Panel! Attendees will be able to line up and ask questions of these two heroes. Please keep your question short, to the point, and family friendly.",
+				schedule:"Saturday 11AM"},
+				{id:"2", 
+				title:"Costume Contest", 
+				description:"You have worked hard on your cosplay for this convention, why not take part in our costume contest! Awards are given in the following categories: Men, Women, Children, and Group.",
+				schedule:"Saturday 1PM"},
+				{id:"3", 
+				title:"How to Build a Droid", 
+				description:"These are the droids you are looking for! Learn how to build your own working droid from start to finish. Also learn tips to keep your droid from taking over the world.",
+				schedule:"Saturday 3PM"},
+				{id:"4", 
+				title:"Major Freedom vs. Metal Man Q&A Panel", 
+				description:"Your favorite superheroes, Major Freedom and Metal Man team up for this once in a lifetime Q&A Panel! Attendees will be able to line up and ask questions of these two heroes. Please keep your question short, to the point, and family friendly.",
+				schedule:"Sunday 11AM"},
+				{id:"5", 
+				title:"World of Games Tournament", 
+				description:"Compete with other players around the world in this year's World of Games Tournament! The victor will get a $10,000 cash prize and bragging rights for being the best of the best.",
+				schedule:"Sunday 1PM"},
+				{id:"6", 
+				title:"How to Build a Time Machine", 
+				description:"We're going back in time! Learn from the time traveling experts themselves including the ins and outs of time travel, the butterfly effect, and building a time machine from start to finish.",
+				schedule:"Sunday 3PM"}
+			];	
+
+			function loadEvents() {
+				document.getElementById("event1Title").text = events[0].title;
+				document.getElementById("event1Description").innerHTML = events[0].description;
+				document.getElementById("event1Schedule").innerHTML = events[0].schedule;
+				
+				document.getElementById("event2Title").text = events[1].title;
+				document.getElementById("event2Description").innerHTML = events[1].description;
+				document.getElementById("event2Schedule").innerHTML = events[1].schedule;
+				
+				document.getElementById("event3Title").text = events[2].title;
+				document.getElementById("event3Description").innerHTML = events[2].description;
+				document.getElementById("event3Schedule").innerHTML = events[2].schedule;
+				
+				document.getElementById("event4Title").text = events[3].title;
+				document.getElementById("event4Description").innerHTML = events[3].description;
+				document.getElementById("event4Schedule").innerHTML = events[3].schedule;
+				
+				document.getElementById("event5Title").text = events[4].title;
+				document.getElementById("event5Description").innerHTML = events[4].description;
+				document.getElementById("event5Schedule").innerHTML = events[4].schedule;
+				
+				document.getElementById("event6Title").text = events[5].title;
+				document.getElementById("event6Description").innerHTML = events[5].description;
+				document.getElementById("event6Schedule").innerHTML = events[5].schedule;
+			}
+			
+			function confirmRegistration() {
+				var eventId = document.getElementById("modalEventId").innerHTML;
+				var firstName = document.getElementById("firstName").text;
+				var lastName = document.getElementById("lastName").text;
+				window.location.href = "confirmation.html?id=" + eventId + "&firstName=" + firstName + "&lastName=" + lastName;                           
+			}
+			
+			function singleEventRegister(eventId) {
+				var eventArrayPosition = eventId;
+				document.getElementById("modalEventId").innerHTML = events[eventArrayPosition].id;
+				document.getElementById("modalEventTitle").innerHTML = events[eventArrayPosition].title;
+				document.getElementById("modalEventSchedule").innerHTML = events[eventArrayPosition].schedule;
+				
+				$('#registrationModal').modal('show');
+			}
+		</script>
+	</body>
+</html>
