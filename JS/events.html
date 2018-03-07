@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
 		<link rel="stylesheet" href="css/custom.css"/>
 		<script type="text/javascript">			
-			window.onload = loadEvents();
+
 		</script>
 	</head>
 
@@ -208,8 +208,10 @@
 		<!-- Bootstrap core JavaScript
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
-		<script src="https://ajax.googleapis.com/ajax/lib/jquery/2.1.4/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"
+			  integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw="
+			  crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		
 		<script type="text/javascript">
 			var events = [
@@ -237,7 +239,7 @@
 				title:"How to Build a Time Machine", 
 				description:"We're going back in time! Learn from the time traveling experts themselves including the ins and outs of time travel, the butterfly effect, and building a time machine from start to finish.",
 				schedule:"Sunday 3PM"}
-			];	
+			];
 
 			function loadEvents() {
 				document.getElementById("event1Title").text = events[0].title;
@@ -267,19 +269,53 @@
 			
 			function confirmRegistration() {
 				var eventId = document.getElementById("modalEventId").innerHTML;
-				var firstName = document.getElementById("firstName").text;
-				var lastName = document.getElementById("lastName").text;
-				window.location.href = "confirmation.html?id=" + eventId + "&firstName=" + firstName + "&lastName=" + lastName;                           
+				var firstName = document.getElementById("firstName").value;
+				var lastName = document.getElementById("lastName").value;
+
+				if (eventId != undefined && firstName != undefined && lastName != undefined) {
+					window.location.href = "confirmation.html?id=" + eventId + "&firstName=" + firstName + "&lastName=" + lastName;  
+				} else {
+					console.warn("An error occured in confirmRegistration()");
+
+					if (eventId != undefined) {
+						console.log("eventId: " + eventId);
+						console.info(events[eventId]);
+					} else {
+						console.error("eventId is undefined")
+					}
+
+					if (firstName != undefined) {
+						console.log("firstName: " + firstName);
+					} else {
+						console.error("firstName is undefined")
+					}
+
+					if (lastName != undefined) {
+						console.log("lastName: " + lastName);
+					} else {
+						console.error("lastName is undefined")
+					}
+
+					console.custom = function(msg) {
+						console.log('%c %s %s %s ', 'color: yellow; background-color: black', '---', msg, '---');
+					}
+
+					console.custom("This is the end of confirmRegistration() error logging");
+				
+				}
+				                        
 			}
 			
 			function singleEventRegister(eventId) {
-				var eventArrayPosition = eventId;
+				var eventArrayPosition = eventId - 1;
 				document.getElementById("modalEventId").innerHTML = events[eventArrayPosition].id;
 				document.getElementById("modalEventTitle").innerHTML = events[eventArrayPosition].title;
 				document.getElementById("modalEventSchedule").innerHTML = events[eventArrayPosition].schedule;
 				
 				$('#registrationModal').modal('show');
 			}
+
+			window.onload = loadEvents();
 		</script>
 	</body>
 </html>

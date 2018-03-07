@@ -24,10 +24,34 @@
 
 
 ## TROUBLESHOOTING CSS
-
+[CSS Hands-on](https://github.com/reemardelarosa/FrontEndWebDevelopmentTroubleshootingTactics/tree/master/CSS)
 
 ## TROUBLESHOOTING JAVASCRIPT
+[Javascript Hands-on](https://github.com/reemardelarosa/FrontEndWebDevelopmentTroubleshootingTactics/tree/master/JS)
+
+- Console Errors
+- Resources Requests
+- Console Logging
+- Custom Console Logging
+
+
+### Console
+- log()
+- info()
+- warn()
+- error()
+- dir()
+- trace()
+- count()
+- assert()
+
 ## TROUBLESHOOTING CROSS-BROWSER COMPATIBILITY
+[Cross Browser Compatibility Hands-on](https://github.com/reemardelarosa/FrontEndWebDevelopmentTroubleshootingTactics/tree/master/Cross-Browser-Comaptibility)
+
+### BrowserStack
+- Dashboard
+- Quick Launch Bar
+
 ## TROUBLESHOOTING DEVICE COMPATIBILITY
-## TROUBLESHOOTING 
+[Device Compatibility Hands-on](https://github.com/reemardelarosa/FrontEndWebDevelopmentTroubleshootingTactics/tree/master/Device-Compatability)
 

@@ -70,13 +70,14 @@
 			];
 			
 			function loadRegistration() {
-				var eventId = GetQueryStringParams("id");
+				var eventId = GetQueryStringParams("id") - 1;
 				var firstName = GetQueryStringParams("firstName");
 				var lastName = GetQueryStringParams("lastName");
+				console.dir(events);
 				if (eventId != undefined && firstName != undefined && lastName != undefined)
 				{
 					document.getElementById("confirmationText").innerHTML = 
-						"Congratulations, " + firstName + " " + lastName + "! You are successfully registered for the following event:<br /><br />" + events[eventId].title + "<br />" + events[eventId].schedule;
+						"Congratulations, " + firstName + " " + lastName + "! You are successfully registered for the following event:<br /><br />" + events[eventId].title + "<br />" + events[eventId].schedule + "<br />" + events[eventId].description;
 				}
 			}
 
